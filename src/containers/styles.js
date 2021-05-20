@@ -86,11 +86,11 @@ export const Text = styled.a`
 export const IncPass = styled.p`
   margin-bottom: 0;
   color: rgb(170,0,0);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ${({theme}) => theme.fonts.primary.family};
 `
 
 export const LoadingMsg = styled.p`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ${({theme}) => theme.fonts.primary.family};
   margin-bottom: 0;
 `
 
@@ -144,7 +144,7 @@ export const Header5 = styled.div`
 export const Link1 = styled(Link)`
   color: white;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ${({theme}) => theme.fonts.primary.family};
   font-size: 18px;
   text-decoration: none;
   line-height: 18px;
@@ -162,7 +162,7 @@ export const Link1 = styled(Link)`
 export const Link2 = styled(Link)`
   color: white;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ${({theme}) => theme.fonts.primary.family};
   font-size: 18px;
   text-decoration: none;
   line-height: 18px;
@@ -179,7 +179,7 @@ export const Link2 = styled(Link)`
 export const LinkButton = styled.button`
   color: white;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ${({theme}) => theme.fonts.primary.family};
   font-size: 18px;
   border: none;
   line-height: 18px;
@@ -198,7 +198,7 @@ export const LinkButton = styled.button`
 export const LinkText1 = styled.div`
   color: white;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ${({theme}) => theme.fonts.primary.family};
   font-size: 18px;
   line-height: 18px;
   padding: 15px;
@@ -208,7 +208,7 @@ export const LinkText1 = styled.div`
 export const LinkText2 = styled.div`
   color: white;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ${({theme}) => theme.fonts.primary.family};
   font-size: 18px;
   line-height: 18px;
   padding: 27px 15px;
@@ -237,7 +237,7 @@ export const Caption = styled.div`
   left: 50px;
   font-size: 50px;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ${({theme}) => theme.fonts.primary.family};
   background-color: rgba(0,142,206,0.8);
 `
 
@@ -246,7 +246,7 @@ export const ParagraphDiv = styled.div`
   height: auto;
   margin: 10px;
   padding: 10px 10px 50px 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ${({theme}) => theme.fonts.primary.family};
 `
 
 export const TitleDiv = styled.div`
@@ -274,7 +274,7 @@ export const Image2 = styled.div`
 `
 
 export const VaccineDiv = styled.div`
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ${({theme}) => theme.fonts.primary.family};
   margin: 30px;
   width: 400px;
 `
@@ -290,7 +290,7 @@ export const LoginContainer = styled.div`
   justify-content: space-evenly;
   padding: 40px 20px;
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.4);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ${({theme}) => theme.fonts.primary.family};
   margin: 3em;
   align-items: center;
   text-align: center;
