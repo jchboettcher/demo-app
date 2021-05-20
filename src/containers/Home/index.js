@@ -3,40 +3,13 @@ import { useQuery } from '@apollo/react-hooks'
 import { useHistory } from 'react-router-dom'
 import { USER_BY_ID } from '../Vaccines/graphql'
 import {
-  Container,
-  BottomDiv,
-  FullDiv,
-  Header1,
-  Header2,
-  Header3,
-  Header4,
-  Header5,
-  Image1,
-  Image2,
-  Link1,
-  Link2,
-  LinkButton,
-  LinkText1,
-  LinkText2,
-  Caption,
-  ImageDiv,
-  ParagraphDiv,
-  TitleDiv,
-  SideImageDiv,
+  Container, BottomDiv, FullDiv,
+  Header1, Header2, Header3, Header4, Header5,
+  Link1, Link2, LinkButton, LinkText1, LinkText2,
+  Image1, Image2, Caption, ImageDiv,
+  ParagraphDiv, TitleDiv, SideImageDiv,
 } from '../styles'
-const jwt = require('jsonwebtoken')
-
-const tokenSecret = 'reughdjsasdkpmasipkmsdfadf'
-const decodeToken = token => {
-  if (!token) {
-    return false
-  }
-  try {
-    return jwt.verify(token, tokenSecret)
-  } catch (error) {
-    return false
-  }
-}
+import { decodeToken } from '../auth'
 
 const Home = () => {
   const history = useHistory()

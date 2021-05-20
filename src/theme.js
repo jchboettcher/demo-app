@@ -1,8 +1,9 @@
-// Add global styles and fonts here
-
 const theme = {
-  colors: {},
-  fonts: {},
+  fonts: {
+    primary: {
+      family: 'Arial, Helvetica, sans-serif',
+    },
+  },
 }
 
 export default theme

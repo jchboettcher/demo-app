@@ -2,14 +2,8 @@ import React, { useState } from 'react'
 import { useMutation } from '@apollo/react-hooks'
 import { useHistory } from 'react-router-dom'
 import {
-  BackgroundContainer,
-  LoginContainer,
-  Input,
-  Title,
-  Button,
-  IncPass,
-  LoadingMsg,
-  Logo,
+  BackgroundContainer, LoginContainer,
+  Input, Title, Button, IncPass, LoadingMsg, Logo,
 } from '../styles'
 import { REGISTER } from './graphql'
 
@@ -20,6 +14,21 @@ const Register = () => {
   const [lastName, setLastName] = useState('')
   const [errMsg, setErrMsg] = useState('')
   const history = useHistory()
+  const submit = () => {
+    const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    const validEmail = emailRegex.test(email.toLowerCase())
+    if (!validEmail) {
+      setErrMsg('Please enter a valid email')
+      return
+    }
+    const passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/
+    const validPass = passRegex.test(password)
+    if (!validPass) {
+      setErrMsg('Password must be at least 8 characters long and contain a lowercase and uppercase letter and a number')
+      return
+    }
+    register()
+  }
   const [register, { loading }] = useMutation(REGISTER, {
     variables: {
       input: {
@@ -73,7 +82,7 @@ const Register = () => {
         { loading && <LoadingMsg>Creating user...</LoadingMsg> }
         <Button onClick={() => {
           setErrMsg('')
-          register()
+          submit()
         }}>Register</Button>
       </LoginContainer>
       <Logo src="https://www.who.int/ResourcePackages/WHO/assets/dist/images/logos/en/h-logo-blue.svg" />

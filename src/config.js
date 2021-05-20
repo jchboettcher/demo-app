@@ -1,3 +1,3 @@
 export default {
-  graphqlUrl: 'http://localhost:5000/graphql',
+  graphqlUrl: 'https://demo-app-server-who.herokuapp.com/',
 }

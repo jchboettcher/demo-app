@@ -2,14 +2,8 @@ import React, { useState, useRef } from 'react'
 import { useMutation } from '@apollo/react-hooks'
 import { useHistory } from 'react-router-dom'
 import {
-  BackgroundContainer,
-  LoginContainer,
-  Input,
-  Title,
-  Button,
-  IncPass,
-  LoadingMsg,
-  Logo,
+  BackgroundContainer, LoginContainer,
+  Input, Title, Button, IncPass, LoadingMsg, Logo,
 } from '../styles'
 import { LOGIN } from './graphql'
 

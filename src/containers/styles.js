@@ -13,17 +13,10 @@ export const BackgroundContainer = styled.div`
 `
 
 export const Container = styled.div`
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh; */
   position: absolute;
   width: 100vw;
   min-height: calc(100vh - 220px);
 `
-
-// export const TopDiv = styled.div`
-// `
 
 export const FullDiv = styled.div`
   display: flex;
@@ -37,20 +30,6 @@ export const BottomDiv = styled.div`
   position: absolute;
   bottom: -220px;
 `
-
-// export const LoginContainer = styled.div`
-//   display: flex;
-//   padding: 40px 20px;
-//   background-color: white;
-//   justify-content: space-evenly;
-//   flex-direction: column;
-//   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-//   transition: 0.3s;
-//   align-items: center;
-//   margin: 3em;
-//   border-radius: 5px;
-//   width: 50%;
-// `
 
 export const Input = styled.input`
   border-radius: 3px;
@@ -87,16 +66,15 @@ export const Button = styled.button`
   cursor: pointer;
   transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
   &:hover {
-    /* background-color: rgb(32,49,59); */
-    /* color: black; */
     border-color: white;
   }
 `
 
 export const Logo = styled.img`
   position: absolute;
-  top: calc(100vh - 160px);
+  top: calc(78vh);
   height: 16%;
+  z-index: -1;
 `
 
 export const Text = styled.a`
@@ -120,7 +98,6 @@ export const Header1 = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  /* padding: 0 15px 0 0; */
   background-color: black;
   height: 48px;
   width: 100vw;
@@ -130,7 +107,6 @@ export const Header2 = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  /* padding: 10px; */
   height: 128px;
   width: 100vw;
 `
@@ -248,7 +224,6 @@ export const ImageDiv = styled.div`
 `
 
 export const Image1 = styled.div`
-  /* position: absolute; */
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -289,7 +264,6 @@ export const SideImageDiv = styled.div`
 `
 
 export const Image2 = styled.div`
-  /* position: absolute; */
   height: 300px;
   width: 1400px;
   margin-left: 50px;
@@ -319,21 +293,11 @@ export const LoginContainer = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   margin: 3em;
   align-items: center;
-  /* border-radius: 5px; */
   text-align: center;
   margin: 3em;
   width: 400px;
   background-color: rgba(0,142,206,0.9);
-  /* animation: color-change 40s infinite; */
   position: center;
-  /* @keyframes color-change {
-    0% { background-color: rgba(100,128,150,0.95); }
-    20% { background-color: rgba(128,128,100,0.95); }
-    40% { background-color: rgba(100,128,128,0.95); }
-    60% { background-color: rgba(150,100,128,0.95); }
-    80% { background-color: rgba(128,150,100,0.95); }
-    100% { background-color: rgba(108,128,150,0.95); }
-  } */
 `
 
 export const InputDiv = styled.div`
@@ -384,7 +348,6 @@ font-size: 16px;
 
 export const TopEntryDiv = styled.div`
   font-size: 16px;
-  /* margin: 10px 0 0 0; */
   padding: 10px 10px;
   border: black 1px;
   border-style: solid;
