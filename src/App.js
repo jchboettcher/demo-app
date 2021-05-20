@@ -10,7 +10,7 @@ import Vaccines from './containers/Vaccines'
 import Home from './containers/Home'
 
 const App = () => (
-  <Router>
+  <Router basename="/demo-app">
     <ThemeProvider theme={theme}>
       <ApolloProvider client={client}>
         <div className="App">
