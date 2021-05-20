@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/proset/static/js/main.67f1de61.chunk.js",
-    "main.js.map": "/proset/static/js/main.67f1de61.chunk.js.map",
-    "runtime-main.js": "/proset/static/js/runtime-main.f903be4e.js",
-    "runtime-main.js.map": "/proset/static/js/runtime-main.f903be4e.js.map",
-    "static/js/2.91cddba8.chunk.js": "/proset/static/js/2.91cddba8.chunk.js",
-    "static/js/2.91cddba8.chunk.js.map": "/proset/static/js/2.91cddba8.chunk.js.map",
-    "index.html": "/proset/index.html",
-    "static/js/2.91cddba8.chunk.js.LICENSE.txt": "/proset/static/js/2.91cddba8.chunk.js.LICENSE.txt"
+    "main.js": "/jchboettcher/demo-app/static/js/main.22cacc7f.chunk.js",
+    "main.js.map": "/jchboettcher/demo-app/static/js/main.22cacc7f.chunk.js.map",
+    "runtime-main.js": "/jchboettcher/demo-app/static/js/runtime-main.ecc4c08b.js",
+    "runtime-main.js.map": "/jchboettcher/demo-app/static/js/runtime-main.ecc4c08b.js.map",
+    "static/js/2.ecf8fa33.chunk.js": "/jchboettcher/demo-app/static/js/2.ecf8fa33.chunk.js",
+    "static/js/2.ecf8fa33.chunk.js.map": "/jchboettcher/demo-app/static/js/2.ecf8fa33.chunk.js.map",
+    "index.html": "/jchboettcher/demo-app/index.html",
+    "static/js/2.ecf8fa33.chunk.js.LICENSE.txt": "/jchboettcher/demo-app/static/js/2.ecf8fa33.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f903be4e.js",
-    "static/js/2.91cddba8.chunk.js",
-    "static/js/main.67f1de61.chunk.js"
+    "static/js/runtime-main.ecc4c08b.js",
+    "static/js/2.ecf8fa33.chunk.js",
+    "static/js/main.22cacc7f.chunk.js"
   ]
 }
